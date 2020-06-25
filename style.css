@@ -33,7 +33,7 @@ body {
 .mid {
     background: url('images/newwall.png');
     padding: 40px;
-    padding-top: 10px;
+    padding-top: 30px;
     z-index: 1;
 }
 
