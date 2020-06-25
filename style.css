@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'DM Mono', monospace;
+    color: grey;
+    background: #1b091c;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.contractStat ul {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    list-style: none  ;
+    font-weight: bold;
+}
+
+.contractStat ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.main {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mid {
+    background: url('images/newwall.png');
+    padding: 40px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.top {
+    padding: 3px;
+}
+
+.header {
+    background: #2e0f2f;
+    height: 50px;
+    padding: 10px;
+}
+
+#historydata {
+    height: 180px;
+    overflow: hidden;
+}
+
+.betarea {
+    padding: 40px;
+    width: 450px;
+    margin: auto;
+    border: 9px solid #2e0f2f;
+    background: #2e0f2f;
+    opacity: 100;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.imgdata {
+}
+
+.tabs {
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    margin-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    background: none;
+    color: grey;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    outline: none;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.tabs button {
+    flex: 1;
+    margin: 6px;
+    border-radius: 8px;
+}
+
+.active {
+    background: #8a62ec;
+    color: white;
+    border: 2px solid #8a62ec;
+}
+
+.act_tab {
+    border-left: 3px solid #8a62ec;
+    border-right: 3px solid #8a62ec;
+}
+
+.start {
+    margin-top: 10px;
+    background: #ffeb3b;
+    color: #16182f;
+    width: 100%;
+}
+
+.cashout {
+    margin-top: 10px;
+    background: #4caf50;
+    color: #16182f;
+    width: 100%;
+}
+
+.opc {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.inputdata {
+    padding-top: 10px;
+    display: flex;
+}
+
+.inputdata input {
+    flex: 1;
+    height: 40px;
+    background: #433a4e;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+.inputdata .half {
+    flex: 0.4;
+    text-align: center;
+    padding: 10px;
+    background: #6c4c7b;
+    color: #c7e0f9;
+    font-weight: bold;
+    height: 40px;
+    border-right: 1px solid #2e0f2f;
+}
+
+.winwin {
+    position: absolute;
+    background: green;
+    width: 300px;
+    margin-left: -20px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(200,255,255,0.1);
+    cursor: not-allowed;
+    display: none;
+}
+
+body {
+    animation: anim-logo   4s ease-in-out 0s 1;
+}
+
+@keyframes anim-logo {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes anim-border {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.history {
+    width: 700px;
+}
+
+.history ul {
+    display: flex;
+    list-style-type: none;
+    width: 240px;
+    background: black;
+    margin: auto;
+}
+
+.history ul li {
+    flex: 1;
+    display: block;
+    padding: 10px;
+    width: 100px;
+}
+
+.his1 {
+    color: #ecd643;
+}
+
+.historyheader {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.historyheader .player1 {
+    font-weight: bold;
+    flex: 1;
+}
+
+.datahis {
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    background: green;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.datahis div {
+    flex: 1;
+}
+
+.win {
+    background: green;
+}
+
+.loss {
+    background: brown;
+}
+
+@media only screen and (max-width: 700px){
+    .betarea {
+        padding: 40px;
+        width: 100%;
+        margin: auto;
+        border: 9px solid #2e0f2f;
+        background: #2e0f2f;
+        opacity: 100;
+        z-index: 2;
+        position: relative;
+        height: 500px;
+    }
+
+    .history {
+        width: 100%;
+    }
+}

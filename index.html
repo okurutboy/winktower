@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Winktower - Earn Up to 300% of your Bet</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="mid">
+            <div class="container">
+                <div class="main">
+                    <div class="contractStat">
+                        <ul style="font-size:12px">
+                            <li>Bets Made : 
+                                <br>
+                                <span id="totalWagered" style="color:	#dbaf0f;font-size:17px"> ? </span> 
+                                <img src="images/win.jpg" width="30px" style="border-radius:50%;border:1px solid white">
+                            </li>
+                            <li>Players : 
+                                <br>
+                                <span id="player" style="color:	#dbaf0f;font-size:17px"> ? </span> 
+                            </li>
+                            <li>Total Won : 
+                                <br>
+                                <span id="totalWon" style="color:	#dbaf0f;font-size:17px"> ? </span> 
+                                <img src="images/win.jpg" width="30px" style="border-radius:50%;border:1px solid white">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="betarea">
+                        <div style="color:grey;font-size:12px;font-weight:bold" align="center">
+                            Total Mined : 
+                            <span id="Mined">?</span> / 10,000.000,000 WTR
+                        </div>
+                        <div class="row" style="background:black;width:95%;padding:5px;margin:auto">
+</div>
+                        <hr>
+                        <div class="tabs tab4" id="r4">
+                            <div class="winwin" id="id4" align="center">
+                                <img src="images/star.png" width="25px" class="sc11 imgdata">
+                            </div>
+                            <button class="selectors sec4" id="sec40" onclick="buildTower(1)">
+                                0.0001
+</button>
+                            <button class="selectors sec4" id="sec41" onclick="buildTower(2)">
+                                0.0001
+</button>
+                        </div>
+                        <div class="tabs tab4" id="r3">
+                            <div class="winwin" id="id3" align="center">
+                                <img src="images/star.png" width="25px" class="sc11 imgdata">
+                            </div>
+                            <button class="selectors sec3" id="sec30" onclick="buildTower(1)">
+                                0.0001
+</button>
+                            <button class="selectors sec3" id="sec31" onclick="buildTower(2)">
+                                0.0001
+</button>
+                        </div>
+                        <div class="tabs tab2" id="r2"> 
+                            <div class="winwin" id="id2" align="center">
+                                <img src="images/star.png" width="25px" class="sc11 imgdata">
+                            </div>
+                            <button class="selectors sec2" id="sec20" onclick="buildTower(1)">
+                                0.0001
+</button>                             
+                            <button class="selectors sec2" id="sec21" onclick="buildTower(2)">
+                                0.0001
+</button>                             
+                        </div>
+                        <div class="tabs tab1 " id="r1">
+                            <div class="winwin" id="id1" align="center">
+                                <img src="images/star.png" width="25px" class="sc11 imgdata">
+                            </div>
+                            <button class="selectors sec1" id="sec10" onclick="buildTower(1)">
+                                0.0001
+</button>
+                            <button class="selectors sec1" id="sec11" onclick="buildTower(2)">
+                                0.0001
+</button>
+                        </div>
+                        <label class="btn start" onclick="startgame()">Start New Game</label>
+                        <label class="btn cashout" onclick="cashout()">CASH OUT 
+                            <span id="cash">?</span>
+                        </label>
+                        <br>
+                        <div style="font-family:monospace">
+                            <br />
+                            Bet Amount : 
+                            <span>?</span> MAX
+                            <div class="inputdata">
+                                <input type="number" id="buy" placeholder="Wink Amount">
+                                <div class="half">
+                                    1/2
+</div>
+                                <div class="half">
+                                    2x
+</div>
+                                <div class="half" onclick="showwin()">
+                                    MAX
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            How to play 
+</div>
+                    </div>
+                    <div align="center">
+                        <i class="fas fa-wallet fa-1x"></i> : 
+                        <span>400 </span> &nbsp
+                        <img src="images/win.jpg" width="20px" style="border-radius:50%;border:1px solid white">
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div>
+            <div class="container history">
+                <ul>
+                    <li class="his1">All Bets </li>
+                    <li class="his2">My Bets </li>
+                </ul>
+                <div class="historyheader">
+                    <div class="player1">
+                        Player
+</div>
+                    <div class="player1">
+                        Level
+</div>
+                    <div class="player1">
+                        Bet
+</div>
+                    <div class="player1">
+                        Result
+</div>
+                    <div class="player1">
+                        Payout
+</div>
+                </div>
+                <div class="" id="historydata">
+                    <div class="datahis">
+                        <div>
+                            TBY2A...caJ6n
+</div>
+                        <div>
+                            2
+</div>
+                        <div>
+                            1
+</div>
+                        <div>
+                            1
+</div>
+                        <div>
+                            1
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="tron.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
