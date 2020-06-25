@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
@@ -32,8 +32,8 @@ body {
 
 .mid {
     background: url('images/newwall.png');
-    padding: 40px;
-    padding-top: 30px;
+    padding: 50px;
+    padding-top: 40px;
     z-index: 1;
 }
 
@@ -276,4 +276,7 @@ body {
     list-style: none  ;
     font-weight: bold;
 }
+    .mid{
+        padding:0
+    }
 }
