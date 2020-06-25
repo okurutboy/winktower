@@ -249,7 +249,6 @@ body {
 
 @media only screen and (max-width: 700px){
     .betarea {
-        padding: 40px;
         width: 100%;
         margin: auto;
         border: 9px solid #2e0f2f;
@@ -257,10 +256,24 @@ body {
         opacity: 100;
         z-index: 2;
         position: relative;
-        height: 500px;
+        
     }
 
     .history {
         width: 100%;
     }
+    .tabs{
+        width:100%
+    }
+    .half{
+        display:none
+    }
+    .contractStat ul {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    list-style: none  ;
+    font-weight: bold;
+}
 }
