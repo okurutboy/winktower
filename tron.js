@@ -292,7 +292,7 @@ function startgame() {
     tower
         .startGame(1)
         .send({
-            callValue: 100000000,
+            callValue: 5000000,
         })
         .then((result) => {
             updatedata();
