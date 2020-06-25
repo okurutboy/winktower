@@ -27,7 +27,7 @@ async function main() {
         setTimeout(main, 1000);
     } else {
         tronWeb = window.tronWeb;
-        tower = await tronWeb.contract().at("TM1zBDx64PZJyFFWmDQPjaGszFd8n3YzAr");
+        tower = await tronWeb.contract().at("TPFYqbFpbAjRqH68ruJQnapFqc4USEE4Bu");
 
         BigNumber = tronWeb.BigNumber;
         currentAddr = tronWeb.defaultAddress["base58"];
